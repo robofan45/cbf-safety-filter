@@ -1,0 +1,61 @@
+{
+  "alpha_sweep": {
+    "0.25": {
+      "time_to_goal": 25.80000000000023,
+      "min_clearance_m": 0.3473411651898619,
+      "min_barrier": 0.8847964484531474,
+      "filtered_steps": 472,
+      "steps": 516,
+      "mean_change": 0.5853885079475095
+    },
+    "0.5": {
+      "time_to_goal": 22.300000000000182,
+      "min_clearance_m": 0.04039928027912909,
+      "min_barrier": 0.09051051846115565,
+      "filtered_steps": 385,
+      "steps": 446,
+      "mean_change": 0.5083411558561945
+    },
+    "1.0": {
+      "time_to_goal": 20.500000000000156,
+      "min_clearance_m": 0.011117325407713707,
+      "min_barrier": 0.024581710821191205,
+      "filtered_steps": 326,
+      "steps": 410,
+      "mean_change": 0.4699938807183931
+    },
+    "1.5": {
+      "time_to_goal": 19.150000000000137,
+      "min_clearance_m": 0.004299415697613496,
+      "min_barrier": 0.009477199510090406,
+      "filtered_steps": 269,
+      "steps": 383,
+      "mean_change": 0.43417474356393604
+    },
+    "3.0": {
+      "time_to_goal": 18.450000000000127,
+      "min_clearance_m": 0.0006221158695445261,
+      "min_barrier": 0.0013690419411529486,
+      "filtered_steps": 225,
+      "steps": 369,
+      "mean_change": 0.4120894907262403
+    },
+    "6.0": {
+      "time_to_goal": 18.250000000000124,
+      "min_clearance_m": 0.0001017474250510908,
+      "min_barrier": 0.0002238546876509595,
+      "filtered_steps": 209,
+      "steps": 365,
+      "mean_change": 0.4062214217220074
+    }
+  },
+  "nominal_min_barrier": -1.3999813866486979,
+  "demo_safe_nominal_steps": 114,
+  "demo_changed_safe_steps": 0,
+  "solver_check": {
+    "problems": 1000,
+    "max_difference": 5.05189698962738e-08,
+    "exact_solver_us": 59.072799973364454,
+    "slsqp_us": 178.11930018797284
+  }
+}

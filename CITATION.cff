@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Control Barrier Function Safety Filter"
+abstract: "A control barrier function safety filter that keeps a robot out of obstacles while changing its commands as little as possible."
+authors:
+  - family-names: Trivedi
+    given-names: Mahim
+version: 1.0.0
+date-released: "2026-11-01"
+license: MIT
+repository-code: "https://github.com/robofan45/cbf-safety-filter"
+keywords:
+  - control-barrier-functions
+  - safety-critical-control
+  - quadratic-programming
+  - robotics
+  - python

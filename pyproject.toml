@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbf-safety-filter"
+version = "1.0.0"
+description = "A control barrier function safety filter that keeps a robot out of obstacles while changing its commands as little as possible."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Mahim Trivedi" }]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+]
+keywords = ["control-barrier-functions", "safety-critical-control", "quadratic-programming", "robotics", "python"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.15", "mypy>=1.10", "scipy>=1.11"]
+
+[project.urls]
+Homepage = "https://github.com/robofan45/cbf-safety-filter"
+Repository = "https://github.com/robofan45/cbf-safety-filter"
+Issues = "https://github.com/robofan45/cbf-safety-filter/issues"
+Collection = "https://github.com/robofan45/Python-Robotics-Projects"
+
+[project.scripts]
+cbf-safety-filter = "cbf_safety_filter.control_barrier_function:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "UP"]
+ignore = ["E501", "E741", "E402"]
+
+[tool.mypy]
+ignore_missing_imports = true
